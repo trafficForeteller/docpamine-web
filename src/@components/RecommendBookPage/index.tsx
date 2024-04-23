@@ -44,9 +44,9 @@ export default function RecommendBookPage() {
                 return (
                   <St.RecommendBookInfoBox key={idx} bookId={idx}>
                     <St.EmotionBox bookId={idx}>
-                      {el.emotion.map((emo, idx) => {
+                      {el.emotion.map((emo, emoIdx) => {
                         return (
-                          <St.EmotionWrapper key={idx}>
+                          <St.EmotionWrapper key={emoIdx}>
                             <St.Emotion src={emojiList[emo.emotionId]} alt="이모지" bookId={idx} />
                             <St.EmotionNumber bookId={idx}>{emo.emotionNumber}</St.EmotionNumber>
                           </St.EmotionWrapper>
